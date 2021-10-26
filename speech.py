@@ -19,3 +19,6 @@ def takecommand():
         return "none"
     text=text.lower()
     return text
+
+
+#import the related packages
