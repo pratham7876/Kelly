@@ -21,4 +21,19 @@ def takecommand():
     return text
 
 
+
+def wish():
+    hour=int(datetime.datetime.now().hour)
+    tt=datetime.datetime.now().strftime("%H:%M:%S")
+
+    if hour>=0 and hour<=12:
+        speak(f"good morning!,its {tt}")
+    elif hour>12 and hour<18:
+        speak(f"good afternoon!,its {tt}")
+    else:
+        speak(f"good evening!,its {tt}")
+    speak("Hello Sir, I am Kelly")
+    speak("Your Personal Assistant")
+    speak("How may I help you ")
+
 #import the related packages
